@@ -1,0 +1,147 @@
+html{
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #444444;
+    padding-top: 70px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+body h2 {
+    color: darkgreen;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem 0;
+}
+
+.custom-shadow {
+    box-shadow: 0 1px 3px rgba(254, 202, 33, 0.954);
+    /* Red shadow with 50% opacity */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #ffc107;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: #d08700 !important;
+}
+
+.navbar .nav-link.active::after {
+    width: 100%;
+}
+
+#about {
+    background-color: antiquewhite;
+}
+
+/* Products Cards */
+#products .card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+
+#products .card:hover {
+    transform: translateY(-15px);
+}
+
+#products .btn-outline-warning {
+    border-color: #b67c1c;
+    color: #b67c1c;
+}
+
+#products .btn-outline-warning:hover {
+    background-color: #b67c1c;
+    color: #fff;
+}
+
+/* benefits */
+#benefits {
+    background-color: antiquewhite;
+}
+
+#benefits .img-fluid {
+    width: 80%;
+}
+
+/* why choose us */
+#whychoose .accordion-button {
+    font-size: 1.1rem;
+}
+
+#whychoose .accordion-body {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Remove blue focus background */
+.accordion-button:focus {
+    box-shadow: none !important;
+    background-color: white !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+    color: #000;
+}
+
+#contact {
+    background-color: antiquewhite;
+}
+
+#contactForm {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+
+}
+
+/* footer */
+footer {
+    background-color: #1f5130;
+}
+.social-icons i{
+    color: antiquewhite;
+}
