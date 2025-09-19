@@ -17,7 +17,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
     //Success toast
     const toastEl = document.createElement('div');
-    toastEl.className = "toast align-items-center text-white bg-success border-0 bottom-0 end-0 m-3 shadow-lg rounded-3";
+    toastEl.className = "toast align-items-center text-white bg-success border-0 position-fixed bottom-0 end-0 m-3 shadow-lg rounded-3";
     toastEl.setAttribute("role","alert");
     toastEl.innerHTML = `
         <div class="d-flex align-items-center p-2">
