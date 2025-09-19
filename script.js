@@ -13,29 +13,13 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(textMessage)}`;
 
-    // window.open(whatsappUrl, '_blank');
+    // Set WhatsApp link inside modal button
+    document.getElementById("openWhatsapp").setAttribute("href", whatsappUrl);
 
-    //Success toast
-    const toastEl = document.createElement('div');
-    toastEl.className = "toast align-items-center text-white bg-success border-0 position-fixed bottom-0 end-0 m-3 shadow-lg rounded-3";
-    toastEl.setAttribute("role","alert");
-    toastEl.innerHTML = `
-        <div class="d-flex align-items-center p-2">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
-                 alt="WhatsApp" width="24" height="24" class="me-2">
-            <div class="toast-body">
-                Your message is ready!
-                <a href="${whatsappUrl}" target="_blank" class="text-white fw-bold text-decoration-underline ms-1">Open WhatsApp</a>
-            </div>
-            <button type="button" class="btn-close btn-close-white ms-2 me-1" data-bs-dismiss="toast"></button>
-        </div> `;
-        document.body.appendChild(toastEl);
-        const toast = new bootstrap.Toast(toastEl);
-        toast.show();
+    // Show modal
+    const whatsappModal = new bootstrap.Modal(document.getElementById('whatsappModal'));
+    whatsappModal.show();
 
-        // setTimeout(()=>{
-        //     window.open(whatsappUrl, '_blank');
-        // },3000);
-
-        document.getElementById("contactForm").reset();
+    // Reset form
+    document.getElementById("contactForm").reset();
 });
