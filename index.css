@@ -45,6 +45,7 @@ a {
 
 .navbar .nav-link {
     position: relative;
+    display: inline-block;
     padding-bottom: 5px;
     margin-left: 1rem;
     font-weight: 500;
