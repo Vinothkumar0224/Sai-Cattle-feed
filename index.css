@@ -76,6 +76,10 @@ a {
     background-color: antiquewhite;
 }
 
+#about .btn-warning:hover{
+    color:#fff;
+}
+
 /* Products Cards */
 #products .card {
     border: none;
@@ -87,12 +91,12 @@ a {
     transform: translateY(-15px);
 }
 
-#products .btn-outline-warning {
+#products .btn-warning {
     border-color: #b67c1c;
     color: #b67c1c;
 }
 
-#products .btn-outline-warning:hover {
+#products .btn-warning:hover {
     background-color: #b67c1c;
     color: #fff;
 }

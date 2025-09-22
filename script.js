@@ -1,3 +1,4 @@
+
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -7,7 +8,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
 
-    const phoneNumber = '919597114210'; 
+    const phoneNumber = '919597114210';
 
     const textMessage = `*New Inquiry from Sai Cattle Feed Website*\n\n*Name :* ${name}\n*Email :* ${email}\n*Phone Number :* ${phone}\n*Subject :* ${subject}\n*Message :* ${message}`;
 
@@ -22,4 +23,16 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
     // Reset form
     document.getElementById("contactForm").reset();
+});
+const showMoreBtn = document.getElementById("showMoreBtn");
+const moreFaqs = document.getElementById("moreFaqs");
+
+showMoreBtn.addEventListener("click", () => {
+    if (moreFaqs.style.display === "none") {
+        moreFaqs.style.display = "block";
+        showMoreBtn.textContent = "Show Less ↑";
+    } else {
+        moreFaqs.style.display = "none";
+        showMoreBtn.textContent = "Show More ↓";
+    }
 });
