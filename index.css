@@ -96,6 +96,10 @@ a {
     color: #b67c1c;
 }
 
+#products .card-body{
+    text-align: left;
+}
+
 #products .btn-warning:hover {
     background-color: #b67c1c;
     color: #fff;
@@ -164,4 +168,31 @@ footer {
 }
 .social-icons i{
     color: antiquewhite;
+}
+
+/* Full-screen splash */
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    opacity: 1;
+    transition: opacity 0.8s ease-out;
+}
+
+/* Logo animation */
+#splash img {
+    width: 180px;
+    animation: zoomFade 1.5s ease-in-out;
+}
+
+@keyframes zoomFade {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
 }
