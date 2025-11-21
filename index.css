@@ -35,7 +35,6 @@ a {
 
 .custom-shadow {
     box-shadow: 0 1px 3px rgba(254, 202, 33, 0.954);
-    /* Red shadow with 50% opacity */
 }
 
 .navbar-brand {
@@ -166,8 +165,82 @@ a {
 footer {
     background-color: #1f5130;
 }
-.social-icons i{
+footer .social-icons i{
     color: antiquewhite;
+}
+
+.expand-social {
+    position: fixed;
+    right: 15px;
+    bottom: 80px;
+    z-index: 9999;
+}
+
+.expand-social .main-btn {
+    width: 35px;
+    height: 35px;
+    background: #ffc107;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.expand-social .social-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    transform: translateY(10px);
+}
+
+.expand-social .social-items a {
+    width: 25%;
+    height: 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+    transition: 0.3s ease;
+}
+
+.expand-social .social-items a:hover {
+    transform: scale(1.1);
+    background: #ffc107;
+    color: #000;
+}
+
+.expand-social.active .social-items {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+    .expand-social .main-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+    .expand-social .social-items a {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
 }
 
 /* Full-screen splash */
@@ -177,22 +250,32 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ffffff; 
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99999;
-    opacity: 1;
-    transition: opacity 0.8s ease-out;
+    z-index: 9999;
 }
 
-/* Logo animation */
+.splash-content {
+    text-align: center;
+}
+
+.splash-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    color: #1f5130;
+    font-family: 'Poppins', sans-serif;;
+}
+
 #splash img {
     width: 180px;
-    animation: zoomFade 1.5s ease-in-out;
+    animation: zoomFade 3s ease-in-out;
 }
 
 @keyframes zoomFade {
     from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
+    to { opacity: 1; transform: scale(1.5); }
 }
