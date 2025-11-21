@@ -651,12 +651,12 @@
         <div class="main-btn"><i class="bi bi-share-fill"></i></div>
 
         <div class="social-items">
-            <a href="https://m.facebook.com/shrisaicattlefeed" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/shrisaicattlefeed?igsh=dmtwejQzMmZ5ajEx" target="_blank"><i
+            <a href="https://m.facebook.com/shrisaicattlefeed" target="_blank" style="color: #1877F2;"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/shrisaicattlefeed?igsh=dmtwejQzMmZ5ajEx" target="_blank" style="color: #E4405F;"><i
                     class="bi bi-instagram"></i></a>
             <a href="https://wa.me/9597114210?text=Hi%20I%20want%20to%20know%20more%20about%20your%20products"
-                target="_blank"><i class="bi bi-whatsapp"></i></a>
-        </div>
+                target="_blank" style="color: #25D366;"><i class="bi bi-whatsapp"></i></a>
+            </div>
     </div>
 
     <!--Modal -->
@@ -682,8 +682,8 @@
 
     <script>
         const splash = document.getElementById("splash");
+        const expandSocial = document.querySelector(".expand-social");
 
-        // Detect if user came from another page in your site
         const cameFromSameSite = document.referrer.includes(window.location.origin);
 
         // Detect if page was refreshed
@@ -692,12 +692,15 @@
         if (!cameFromSameSite || isRefresh) {
             // First visit OR refresh → show splash
             splash.style.display = "flex";
+            expandSocial.style.display = "none";
             setTimeout(() => {
                 splash.style.display = "none";
+                expandSocial.style.display = "block";
             }, 3000);
         } else {
             // User came back from other internal page → hide splash
             splash.style.display = "none";
+            expandSocial.style.display = "block";
         }
     </script>
 
@@ -705,6 +708,32 @@
         document.querySelector(".expand-social .main-btn").addEventListener("click", function () {
             document.querySelector(".expand-social").classList.toggle("active");
         });
+    </script>
+
+    <script>
+        let dimTimeout;
+
+        function activateBrightness() {
+            const btn = document.querySelector(".expand-social");
+
+            // Make bright immediately
+            btn.classList.remove("dim");
+
+            // Clear any previous timer
+            clearTimeout(dimTimeout);
+
+            // After 5 seconds, make it dim again
+            dimTimeout = setTimeout(() => {
+                btn.classList.add("dim");
+            }, 5000);
+        }
+
+        // When user clicks or touches the floating button → Bright again
+        document.querySelector(".expand-social").addEventListener("click", activateBrightness);
+        document.querySelector(".expand-social").addEventListener("touchstart", activateBrightness);
+
+        // Initial dim timer start after page loads
+        window.addEventListener("load", activateBrightness);
     </script>
 
 

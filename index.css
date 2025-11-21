@@ -171,21 +171,25 @@ footer .social-icons i{
 
 .expand-social {
     position: fixed;
-    right: 15px;
-    bottom: 80px;
-    z-index: 9999;
+    right: 20px;
+    bottom: -80px;
+    z-index: 999;
+}
+
+.expand-social {
+    display: none;
 }
 
 .expand-social .main-btn {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     background: #ffc107;
     color: #000;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.25);
     cursor: pointer;
     transition: 0.3s ease;
@@ -198,12 +202,12 @@ footer .social-icons i{
     opacity: 0;
     pointer-events: none;
     transition: 0.3s ease;
-    transform: translateY(10px);
+    transform: translateY(-200px);
 }
 
 .expand-social .social-items a {
-    width: 25%;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     background: #fff;
     color: #000;
     border-radius: 50%;
@@ -211,7 +215,7 @@ footer .social-icons i{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none;
     box-shadow: 0 3px 10px rgba(0,0,0,0.25);
     transition: 0.3s ease;
@@ -226,7 +230,16 @@ footer .social-icons i{
 .expand-social.active .social-items {
     opacity: 1;
     pointer-events: auto;
-    transform: translateY(0);
+    transform: translateY(-210px);
+}
+
+.expand-social{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.expand-social.dim{
+    opacity: 0.4;
 }
 
 /* Mobile optimization */
