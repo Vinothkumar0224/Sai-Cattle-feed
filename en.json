@@ -1,0 +1,245 @@
+{
+    "indexPage": {
+        "head": {
+            "title": "Shri Sai Cattle Feeds"
+        },
+        "splash": {
+            "brand_name": "Shri Sai Cattle Feeds"
+        },
+        "navbar": {
+            "brand_name": "Shri Sai Cattle Feeds",
+            "home": "Home",
+            "products": "Products",
+            "benefits": "Benefits",
+            "why_choose_us": "Why Choose Us",
+            "contact": "Contact"
+        },
+        "about": {
+            "title": "Shri Sai Cattle Feeds",
+            "tagline": "Strength for cows, prosperity for farmers — Shri Sai Cattle Feeds.",
+            "para1": "Established in 2023, Shri Sai Cattle Feeds was founded with a clear mission — to provide farmers with high-quality, natural, and nutrient-rich cattle feeds that improve animal strength and productivity.",
+            "para2": "Healthy cows are the backbone of successful dairy farmers. That is why our feeds use carefully selected ingredients like maize, grains, oil cakes, minerals, and salts to boost milk production, growth, and digestion.",
+            "para3": "Our commitment to purity, consistency, and farmer satisfaction has made us a trusted brand among dairy farmers.",
+            "button_text": "View our products"
+        },
+        "products_section": {
+            "heading": "Our Premium Product",
+            "product_title": "Shri Sai Cattle Feeds",
+            "description": "We carefully choose the finest ingredients to provide balanced nutrition for cattle. These ingredients help improve energy, digestion, milk yield, and overall health.",
+            "button_text": "View all ingredients"
+        },
+        "benefits_section": {
+            "heading": "Benefits For Your Cattle",
+            "benefit1_title": "Natural Ingredients:",
+            "benefit1_desc": "Crafted with wholesome, natural ingredients sourced from trusted farms for pure nutrition.",
+            "benefit2_title": "Increases Milk Production:",
+            "benefit2_desc": "Special formulation enhances milk yield and fat percentage.",
+            "benefit3_title": "Boosts Immunity:",
+            "benefit3_desc": "Added vitamins and minerals strengthen immunity.",
+            "benefit4_title": "Improves Growth & Weight:",
+            "benefit4_desc": "Helps in healthy weight gain and muscle development.",
+            "benefit5_title": "Enhances Reproduction:",
+            "benefit5_desc": "Balanced nutrition improves breeding efficiency and calf health."
+        },
+        "whyworks_section": {
+            "heading": "Why Our Feed Works Best",
+            "description": "Every batch of Shri Sai Cattle Feeds is designed with a balanced mix of proteins, energy, minerals, and fiber. This helps in:",
+            "box1_title": "Higher Milk Yield",
+            "box2_title": "Better Body Condition",
+            "box3_title": "Healthy Digestion",
+            "box4_title": "Strong Immunity"
+        },
+        "missionvision_section": {
+            "heading": "Mission & Vision",
+            "mission_title": "Our Mission",
+            "mission_desc": "To provide natural, nutrient-rich cattle feeds that increase milk production, improve cattle health, and boost farmer income — delivering trust and quality in every bag.",
+            "vision_title": "Our Vision",
+            "vision_desc": "To become one of India’s most trusted and farmer-friendly cattle feed brands with innovation, ethics, and commitment to rural growth."
+        },
+        "faq_section": {
+            "heading": "Frequently Asked Questions",
+            "q1_title": "What is cattle feed made of?",
+            "q1_desc": "Our feed is a balanced mix of maize, rice bran, groundnut cake, soybean, and essential minerals to support healthy growth and milk production.",
+            "q2_title": "Is your feed safe for all types of cattle?",
+            "q2_desc": "Yes, it is suitable for cows, buffaloes, and calves. We do not use any harmful chemicals.",
+            "q3_title": "How does your feed increase milk production?",
+            "q3_desc": "High protein and balanced nutrients support digestion and energy conversion, resulting in increased milk yield and quality.",
+            "q4_title": "Do you use chemicals or preservatives?",
+            "q4_desc": "No. Our feed is made using 100% natural ingredients without harmful additives.",
+            "q5_title": "How should cattle feed be stored?",
+            "q5_desc": "Store in a cool and dry place in airtight bags or containers.",
+            "q6_title": "How often should feed be given?",
+            "q6_desc": "Feed twice a day depending on age, weight, and purpose (milk/yield/growth).",
+            "q7_title": "Does the feed contain minerals?",
+            "q7_desc": "Yes, essential minerals like calcium, phosphorus, and vitamins are added.",
+            "q8_title": "Can calves eat the same feed?",
+            "q8_desc": "Calves require a separate feed formula. We also offer calf starter feed.",
+            "q9_title": "What is the shelf life?",
+            "q9_desc": "If stored properly, it stays fresh for up to 3 months.",
+            "q10_title": "Do you supply to dairy farms?",
+            "q10_desc": "Yes, bulk orders and discounts are available for farms.",
+            "show_more": "Show More ↓",
+            "show_less": "Show Less ↑"
+        },
+        "contact": {
+            "heading": "Contact Us",
+            "description": "We are always happy to assist you. You can reach us through the following:",
+            "form": {
+                "name": "Full Name *",
+                "email": "Email *",
+                "phone": "Phone Number",
+                "subject": "Subject *",
+                "message": "Message *",
+                "submit": "Send Message"
+            },
+            "address_title": "Office Address",
+            "address_value": "77D, Durai Samipuram, Nilakottai, Dindigul - 624208.",
+            "phone_title": "Phone",
+            "email_title": "Email",
+            "hours_title": "Working Hours",
+            "hours_value": "Mon - Fri: 7 AM - 8 PM\nSat - Sun: 9 AM - 2 PM"
+        },
+        "footer": {
+            "brand": "Shri Sai Cattle Feeds",
+            "desc": "Committed to high-quality cattle nutrition and farmer success.",
+            "quickLinks": {
+                "title": "Quick Links",
+                "home": "Home",
+                "about": "About Us",
+                "benefits": "Benefits",
+                "faqs": "FAQs",
+                "mission": "Mission & Vision"
+            },
+            "products": {
+                "title": "Products",
+                "cattle": "Cattle Feed",
+                "goat": "Goat Feed"
+            },
+            "contact": {
+                "title": "Contact Us",
+                "phone": "+91 97916 60051",
+                "email": "shrisaicattleFeeds@gmail.com",
+                "address": "Nilakottai, Tamil Nadu"
+            },
+            "copyright": "© 2023 Shri Sai Cattle Feeds. All rights reserved."
+        },
+        "modal": {
+            "title": "Message Ready!",
+            "body_line1": "Your message is ready, Click below to open WhatsApp.",
+            "button": "Open WhatsApp"
+        }
+    },
+    "productPage": {
+        "headTitle": "Shri Sai Cattle Feeds | Ingredients",
+        "backToHome": "← Back to Home",
+        "pageTitle": "Ingredients & Benefits of Shri Sai Cattle Feeds",
+        "navbar": {
+            "brand": "Shri Sai Cattle Feeds",
+            "home": "Home",
+            "products": "Products",
+            "benefits": "Benefits",
+            "whychoose": "Why Choose Us",
+            "contact": "Contact"
+        },
+        "productsList": {
+            "title1": "Corn Flour",
+            "points1_1": "Boosts energy and strength",
+            "points1_2": "Improves milk fat percentage",
+            "whatsapp1": "Enquire on WhatsApp",
+            
+            "title2": "DDGS",
+            "points2_1": "Excellent source of protein",
+            "points2_2": "Supports muscle growth",
+            "whatsapp2": "Enquire on WhatsApp",
+            
+            "title3": "Salt",
+            "points3_1": "Stimulates appetite",
+            "points3_2": "Maintains body water balance",
+            "whatsapp3": "Enquire on WhatsApp",
+            
+            "title4": "Cotton Seed Hull",
+            "points4_1": "Improves digestion",
+            "points4_2": "Protects overall health",
+            "whatsapp4": "Enquire on WhatsApp",
+            
+            "title5": "Groundnut Hull",
+            "points5_1": "Natural mineral source",
+            "points5_2": "Supports nutrient absorption",
+            "whatsapp5": "Enquire on WhatsApp",
+            
+            "title6": "Sesame Cake",
+            "points6_1": "Increases milk richness",
+            "points6_2": "Supports bone & immune strength",
+            "whatsapp6": "Enquire on WhatsApp",
+            
+            "title7": "Groundnut Cake",
+            "points7_1": "Enhances milk quantity",
+            "points7_2": "Rich in amino acids",
+            "whatsapp7": "Enquire on WhatsApp",
+            
+            "title8": "Coconut Cake",
+            "points8_1": "Gives shine to cow's skin",
+            "points8_2": "Helps digestion",
+            "whatsapp8": "Enquire on WhatsApp",
+            
+            "title9": "Biscuit Powder",
+            "points9_1": "Improves feed taste",
+            "points9_2": "Provides instant energy",
+            "whatsapp9": "Enquire on WhatsApp",
+            
+            "title10": "Pearl Millet",
+            "points10_1": "Keeps cattle active",
+            "points10_2": "Boosts performance in heat",
+            "whatsapp10": "Enquire on WhatsApp",
+            
+            "title11": "Horse Gram",
+            "points11_1": "Improves body strength",
+            "points11_2": "Enhances digestion",
+            "whatsapp11": "Enquire on WhatsApp",
+            
+            "title12": "Red Gram",
+            "points12_1": "Boosts muscle strength",
+            "points12_2": "Improves milk quality",
+            "whatsapp12": "Enquire on WhatsApp",
+            
+            "title13": "White Gram",
+            "points13_1": "Enhances calf growth",
+            "points13_2": "Improves feed efficiency",
+            "whatsapp13": "Enquire on WhatsApp",
+            
+            "title14": "Rice Bran Powder",
+            "points14_1": "Helps weight gain",
+            "points14_2": "Provides long-lasting energy",
+            "whatsapp14": "Enquire on WhatsApp",
+            
+            "title15": "Green Gram Powder",
+            "points15_1": "Improves digestion & milk flow",
+            "points15_2": "Boosts immunity",
+            "whatsapp15": "Enquire on WhatsApp"
+        },
+        "footer": {
+            "brand": "Shri Sai Cattle Feeds",
+            "desc": "Committed to high-quality cattle nutrition and farmer success.",
+            "quickLinks": {
+                "title": "Quick Links",
+                "home": "Home",
+                "about": "About Us",
+                "benefits": "Benefits",
+                "faqs": "FAQs",
+                "mission": "Mission & Vision"
+            },
+            "products": {
+                "title": "Products",
+                "cattle": "Cattle Feed",
+                "goat": "Goat Feed"
+            },
+            "contact": {
+                "title": "Contact Us",
+                "phone": "+91 97916 60051",
+                "email": "shrisaicattleFeeds@gmail.com",
+                "address": "Nilakottai, Tamil Nadu"
+            },
+            "copyright": "© 2023 Shri Sai Cattle Feeds. All rights reserved."
+        }
+    }
+}

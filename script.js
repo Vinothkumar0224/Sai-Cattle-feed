@@ -7,9 +7,9 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
 
-    const phoneNumber = '919597114210';
+    const phoneNumber = '919791660051';
 
-    const textMessage = `*New Inquiry from Sai Cattle Feed Website*\n\n*Name :* ${name}\n*Email :* ${email}\n*Phone Number :* ${phone}\n*Subject :* ${subject}\n*Message :* ${message}`;
+    const textMessage = `*New Inquiry from Shri Sai Cattle Feeds Website*\n\n*Name :* ${name}\n*Email :* ${email}\n*Phone Number :* ${phone}\n*Subject :* ${subject}\n*Message :* ${message}`;
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(textMessage)}`;
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ta">
 
 <head>
     <meta charset="utf-8">
@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80" tabindex="0">
@@ -17,7 +19,7 @@
     <div id="splash">
         <div class="splash-content">
             <img src="image/Sai-logo.webp" alt="Cattle Feeds Logo">
-            <h2>Shri Sai Cattle Feeds</h2>
+            <h2 data-i18n="indexPage.splash.brand_name">Shri Sai Cattle Feeds</h2>
         </div>
     </div>
 
@@ -25,18 +27,30 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top custom-shadow">
         <div class="container">
             <img src="image/Sai-logo.webp" alt="Sai logo" width="40" height="40" /> &nbsp;
-            <a class="navbar-brand" style="color: darkgreen; font-family: 'Montserrat';" href="#">Shri Sai Cattle Feeds</a>
+            <a class="navbar-brand" style="color: darkgreen; font-family: 'Montserrat';" href="#"
+                data-i18n="indexPage.navbar.brand_name">Shri Sai Cattle
+                Feeds</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#about">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#whychoose">Why Choose Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#about"
+                            data-i18n="indexPage.navbar.home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products"
+                            data-i18n="indexPage.navbar.products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#benefits"
+                            data-i18n="indexPage.navbar.benefits">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#whychoose"
+                            data-i18n="indexPage.navbar.why_choose_us">Why Choose Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"
+                            data-i18n="indexPage.navbar.contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="langToggleBtn" class="btn btn-language ms-2" onclick="toggleLanguage()">
+                           <span class="lang-en">EN</span> / <span class="lang-ta">TA</span>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -51,27 +65,28 @@
                 </div>
 
                 <div class="about mb-5 col-md-6">
-                    <h1 class="display-4 fw-bold">Shri Sai Cattle Feeds</h1>
-                    <p class="fw-semibold fst-italic">
+                    <h1 class="display-4 fw-bold" data-i18n="indexPage.about.title">Shri Sai Cattle Feeds</h1>
+                    <p class="fw-semibold fst-italic" data-i18n="indexPage.about.tagline">
                         “Cattle’s Strength, Farmer’s Prosperity — Shri Sai Cattle Feeds.”
                     </p>
 
-                    <p>
+                    <p data-i18n="indexPage.about.para1">
                         Founded in <b>2023</b>, <b>Shri Sai Cattle Feeds</b> was established with a single vision
                         to provide farmers with high-quality, natural, and nutrient-rich cattle Feeds
                         that ensures the strength and productivity of their cattle.
                     </p>
-                    <p>
+                    <p data-i18n="indexPage.about.para2">
                         We understand that <b>healthy cattle are the backbone of every successful dairy farmer</b>.
                         That’s why we source only the best ingredients — including <b>corn, pulses, oil cakes,
                             minerals, and salts</b> — to produce Feeds that promotes better milk yield, stronger growth,
                         and improved digestion.
                     </p>
-                    <p>
+                    <p data-i18n="indexPage.about.para3">
                         Our dedication to <b>purity, consistency, and farmer satisfaction</b> has made us a trusted
                         name among dairy farmers.
                     </p>
-                    <a href="#products" class="btn btn-warning">Explore our Products</a>
+                    <a href="#products" class="btn btn-warning" data-i18n="indexPage.about.button_text">Explore our
+                        Products</a>
                 </div>
             </div>
         </div>
@@ -79,7 +94,7 @@
 
     <section id="products" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Our Premium Product</h2>
+            <h2 class="text-center mb-5" data-i18n="indexPage.products_section.heading">Our Premium Product</h2>
 
             <div class="row align-items-center">
 
@@ -113,15 +128,16 @@
 
                 <!-- RIGHT: PRODUCT INFO -->
                 <div class="col-md-6">
-                    <h3 class="fw-bold">Shri Sai Cattle Feeds</h3>
+                    <h3 class="fw-bold" data-i18n="indexPage.products_section.product_title">Shri Sai Cattle Feeds</h3>
 
-                    <p class="mt-3">
+                    <p class="mt-3" data-i18n="indexPage.products_section.description">
                         We carefully select high-quality ingredients to provide
                         balanced nutrition for cattle. These ingredients help
                         improve stamina, digestion, milk yield, and overall health.
                     </p>
 
-                    <a href="product.html" class="btn btn-primary mt-3">
+                    <a href="product.html" class="btn btn-primary mt-3"
+                        data-i18n="indexPage.products_section.button_text">
                         View All Ingredients
                     </a>
                 </div>
@@ -130,69 +146,10 @@
         </div>
     </section>
 
-    <!-- Product section -->
-    <!-- <section id="products" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-5">Our Premium Products</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 shadow">
-                        <img src="image/Product1.webp" class="card-img-top" height="400px" style="object-fit:cover;"
-                            alt="Corn Flour">
-                        <div class="card-body">
-                            <h5 class="card-title">Corn Flour</h5>
-                            <ul>
-                                <li>Boosts energy and stamina</li>
-                                <li>Enhances milk fat percentage</li>
-                            </ul>
-                            <a href="https://wa.me/9597114210?text=I%20want%20to%20enquire%20about%20Corn"
-                                target="_blank" class="btn btn-outline-warning">Enquire on WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 shadow">
-                        <img src="image/product2.webp" class="card-img-top" height="400px" style="object-fit:cover;"
-                            alt="DDGS">
-                        <div class="card-body">
-                            <h5 class="card-title">DDGS</h5>
-                            <ul class="card-text">
-                                <li>Excellent protein source</li>
-                                <li>Supports muscle development</li>
-                            </ul>
-                            <a href="https://wa.me/9597114210?text=I%20want%20to%20enquire%20about%20DDGS"
-                                target="_blank" class="btn btn-outline-warning">Enquire on WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 shadow">
-                        <img src="image/product3.webp" class="card-img-top" height="400px" style="object-fit:cover;"
-                            alt="Salt">
-                        <div class="card-body">
-                            <h5 class="card-title">Salt</h5>
-                            <ul>
-                                <li>Encourages appetite</li>
-                                <li>Maintains hydration levels</li>
-                            </ul>
-                            <a href="https://wa.me/9597114210?text=I%20want%20to%20enquire%20about%20Salt"
-                                target="_blank" class="btn btn-outline-warning">Enquire on WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-4">
-                    <a href="product.html" class="btn btn-primary">View All Ingredients</a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- Benefits section -->
     <section id="benefits" class="py-5">
         <div class="container text-center">
-            <h2 class="text-center mb-5">Benefits For Your Cattle</h2>
+            <h2 class="text-center mb-5" data-i18n="indexPage.benefits_section.heading">Benefits For Your Cattle</h2>
             <div class="row align-items-center g-4">
                 <div class="col-md-6">
                     <img src="image/image.jpeg" class="img-fluid rounded">
@@ -203,43 +160,53 @@
                         <li class="list-group-item mb-3 d-flex align-items-start rounded-3">
                             <i class="bi bi-leaf text-success fs-4 me-3"></i>
                             <div class="text-start">
-                                <strong>Natural Ingredients :</strong>
-                                Crafted with wholesome, natural ingredients sourced from trusted farms for pure
-                                nutrition.
+                                <strong data-i18n="indexPage.benefits_section.benefit1_title">Natural Ingredients
+                                    :</strong>
+                                <span data-i18n="indexPage.benefits_section.benefit1_desc">Crafted with wholesome,
+                                    natural ingredients sourced from trusted farms for pure
+                                    nutrition.</span>
                             </div>
                         </li>
 
                         <li class="list-group-item mb-3 d-flex align-items-start rounded-3">
                             <i class="bi bi-droplet text-success fs-4 me-3"></i>
                             <div class="text-start">
-                                <strong>Increased Milk Production :</strong>
-                                Specialized formulas proven to boost milk yield and improve milk fat content.
+                                <strong data-i18n="indexPage.benefits_section.benefit2_title">Increased Milk Production
+                                    :</strong>
+                                <span data-i18n="indexPage.benefits_section.benefit2_desc">Specialized formulas proven
+                                    to boost milk yield and improve milk fat content.</span>
                             </div>
                         </li>
 
                         <li class="list-group-item mb-3 d-flex align-items-start rounded-3">
                             <i class="bi bi-shield-check text-success fs-4 me-3"></i>
                             <div class="text-start">
-                                <strong>Enhanced Immunity :</strong>
-                                Fortified with vitamins and minerals to strengthen the immune system and reduce disease
-                                susceptibility.
+                                <strong data-i18n="indexPage.benefits_section.benefit3_title">Enhanced Immunity
+                                    :</strong>
+                                <span data-i18n="indexPage.benefits_section.benefit3_desc">Fortified with vitamins and
+                                    minerals to strengthen the immune system and reduce disease
+                                    susceptibility.</span>
                             </div>
                         </li>
 
                         <li class="list-group-item mb-3 d-flex align-items-start rounded-3">
                             <i class="bi-graph-up-arrow text-success fs-4 me-3"></i>
                             <div class="text-start">
-                                <strong>Optimal Growth & Weight :</strong>
-                                Promotes healthy weight gain and muscle development for robust and productive cattle.
+                                <strong data-i18n="indexPage.benefits_section.benefit4_title">Optimal Growth & Weight
+                                    :</strong>
+                                <span data-i18n="indexPage.benefits_section.benefit4_desc">Promotes healthy weight gain
+                                    and muscle development for robust and productive cattle.</span>
                             </div>
                         </li>
 
                         <li class="list-group-item mb-3 d-flex align-items-start rounded-3">
                             <i class="bi-heart-pulse text-success fs-4 me-3"></i>
                             <div class="text-start">
-                                <strong>Improved Reproductive Health :</strong>
-                                Balanced nutrition supports fertility and ensures healthy calving for sustained
-                                breeding.
+                                <strong data-i18n="indexPage.benefits_section.benefit5_title">Improved Reproductive
+                                    Health :</strong>
+                                <span data-i18n="indexPage.benefits_section.benefit5_desc">Balanced nutrition supports
+                                    fertility and ensures healthy calving for sustained
+                                    breeding.</span>
                             </div>
                         </li>
 
@@ -252,8 +219,8 @@
 
     <section id="whyworks" class="py-5 bg-light fade-in">
         <div class="container">
-            <h2 class="text-center mb-4 fw-bold">Why Our Feeds Works</h2>
-            <p class="text-center mb-5">
+            <h2 class="text-center mb-4 fw-bold" data-i18n="indexPage.whyworks_section.heading">Why Our Feeds Works</h2>
+            <p class="text-center mb-5" data-i18n="indexPage.whyworks_section.description">
                 Each batch of Shri Sai Cattle Feeds is a balanced mix of protein, energy, minerals, and fiber — designed
                 for:
             </p>
@@ -262,28 +229,32 @@
                 <div class="col-md-3">
                     <div class="p-4 shadow-sm rounded bg-white h-100">
                         <img src="https://img.icons8.com/color/96/cow.png" width="60">
-                        <h5 class="mt-3 fw-semibold">Higher Milk Yield</h5>
+                        <h5 class="mt-3 fw-semibold" data-i18n="indexPage.whyworks_section.box1_title">Higher Milk Yield
+                        </h5>
                     </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="p-4 shadow-sm rounded bg-white h-100">
                         <img src="https://img.icons8.com/color/96/healthy-food.png" width="60">
-                        <h5 class="mt-3 fw-semibold">Better Body Condition</h5>
+                        <h5 class="mt-3 fw-semibold" data-i18n="indexPage.whyworks_section.box2_title">Better Body
+                            Condition</h5>
                     </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="p-4 shadow-sm rounded bg-white h-100">
                         <img src="https://img.icons8.com/color/96/stomach.png" width="60">
-                        <h5 class="mt-3 fw-semibold">Healthy Digestion</h5>
+                        <h5 class="mt-3 fw-semibold" data-i18n="indexPage.whyworks_section.box3_title">Healthy Digestion
+                        </h5>
                     </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="p-4 shadow-sm rounded bg-white h-100">
                         <img src="https://img.icons8.com/fluency/96/shield.png" width="60">
-                        <h5 class="mt-3 fw-semibold">Strong Immunity</h5>
+                        <h5 class="mt-3 fw-semibold" data-i18n="indexPage.whyworks_section.box4_title">Strong Immunity
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -292,14 +263,16 @@
 
     <section id="missionvision" class="py-5 fade-in">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold">MISSION & VISION</h2>
+            <h2 class="text-center mb-5 fw-bold" data-i18n="indexPage.missionvision_section.heading">MISSION & VISION
+            </h2>
 
             <div class="row g-4">
 
                 <div class="col-md-6">
                     <div class="p-4 shadow rounded bg-white h-100 border-start border-warning border-4">
-                        <h3 class="text-warning fw-bold">Our Mission</h3>
-                        <p class="mt-3">
+                        <h3 class="text-warning fw-bold" data-i18n="indexPage.missionvision_section.mission_title">Our
+                            Mission</h3>
+                        <p class="mt-3" data-i18n="indexPage.missionvision_section.mission_desc">
                             To deliver <b>nutrient-balanced and natural cattle Feeds</b> that helps farmers improve
                             milk yield, cattle health, and farm income — with every bag carrying our promise
                             of quality and trust.
@@ -309,8 +282,9 @@
 
                 <div class="col-md-6">
                     <div class="p-4 shadow rounded bg-white h-100 border-start border-warning border-4">
-                        <h3 class="text-warning fw-bold">Our Vision</h3>
-                        <p class="mt-3">
+                        <h3 class="text-warning fw-bold" data-i18n="indexPage.missionvision_section.vision_title">Our
+                            Vision</h3>
+                        <p class="mt-3" data-i18n="indexPage.missionvision_section.vision_desc">
                             To become one of <b>India’s most trusted and farmer-friendly cattle Feeds brands</b>,
                             known for ethical practices, innovation, and commitment to the rural farming
                             community. We envision a future where <b>every farmer grows with strength, and
@@ -326,7 +300,7 @@
     <!-- Why Choose Us section -->
     <section id="whychoose" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <h2 class="text-center mb-5" data-i18n="indexPage.faq_section.heading">Frequently Asked Questions</h2>
 
             <div class="accordion" id="whyChooseAccordion">
 
@@ -335,11 +309,11 @@
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            What is cattle Feeds made of?
+                            <span data-i18n="indexPage.faq_section.q1_title">What is cattle Feeds made of?</span>
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
-                        <div class="accordion-body">
+                        <div class="accordion-body" data-i18n="indexPage.faq_section.q1_desc">
                             Our cattle Feeds is made from a balanced mix of maize, rice bran, groundnut cake, soya, and
                             essential minerals to support healthy growth and milk production.
                         </div>
@@ -351,11 +325,12 @@
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Is your Feeds safe for all types of cattle?
+                            <span data-i18n="indexPage.faq_section.q2_title">Is your Feeds safe for all types of
+                                cattle?</span>
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
-                        <div class="accordion-body">
+                        <div class="accordion-body" data-i18n="indexPage.faq_section.q2_desc">
                             Yes, our Feeds is suitable for cows, buffaloes, and calves. We use only natural and safe
                             ingredients with no harmful additives.
                         </div>
@@ -367,11 +342,12 @@
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            How does your Feeds improve milk yield?
+                            <span data-i18n="indexPage.faq_section.q3_title">How does your Feeds improve milk
+                                yield?</span>
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
-                        <div class="accordion-body">
+                        <div class="accordion-body" data-i18n="indexPage.faq_section.q3_desc">
                             The high protein and balanced nutrition in our Feeds help cattle digest better and convert
                             food into energy, resulting in improved milk yield and quality.
                         </div>
@@ -383,11 +359,12 @@
                     <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Do you add any chemicals or preservatives?
+                            <span data-i18n="indexPage.faq_section.q4_title">Do you add any chemicals or
+                                preservatives?</span>
                         </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
-                        <div class="accordion-body">
+                        <div class="accordion-body" data-i18n="indexPage.faq_section.q4_desc">
                             No, we strictly avoid harmful chemicals. Our Feeds is 100% natural and freshly prepared to
                             maintain quality.
                         </div>
@@ -399,11 +376,11 @@
                     <h2 class="accordion-header" id="headingFive">
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            How should I store cattle Feeds?
+                            <span data-i18n="indexPage.faq_section.q5_title">How should I store cattle Feeds?</span>
                         </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
-                        <div class="accordion-body">
+                        <div class="accordion-body" data-i18n="indexPage.faq_section.q5_desc">
                             Store the Feeds in a cool, dry place away from moisture. Use airtight containers or bags to
                             keep it fresh.
                         </div>
@@ -418,11 +395,12 @@
                         <h2 class="accordion-header" id="headingSix">
                             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                How often should I Feeds my cattle?
+                                <span data-i18n="indexPage.faq_section.q6_title">How often should I Feeds my
+                                    cattle?</span>
                             </button>
                         </h2>
                         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
-                            <div class="accordion-body">
+                            <div class="accordion-body" data-i18n="indexPage.faq_section.q6_desc">
                                 Cattle should be fed twice daily with the recommended quantity of Feeds based on age,
                                 weight, and purpose (milk or growth).
                             </div>
@@ -434,11 +412,12 @@
                         <h2 class="accordion-header" id="headingSeven">
                             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                Do you provide mineral supplements in the Feeds?
+                                <span data-i18n="indexPage.faq_section.q7_title">Do you provide mineral supplements in
+                                    the Feeds?</span>
                             </button>
                         </h2>
                         <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
-                            <div class="accordion-body">
+                            <div class="accordion-body" data-i18n="indexPage.faq_section.q7_desc">
                                 Yes, our Feeds contains essential minerals like calcium, phosphorus, and vitamins for
                                 strong bones, immunity, and better milk quality.
                             </div>
@@ -450,11 +429,12 @@
                         <h2 class="accordion-header" id="headingEight">
                             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                Can calves consume the same Feeds?
+                                <span data-i18n="indexPage.faq_section.q8_title">Can calves consume the same
+                                    Feeds?</span>
                             </button>
                         </h2>
                         <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight">
-                            <div class="accordion-body">
+                            <div class="accordion-body" data-i18n="indexPage.faq_section.q8_desc">
                                 Calves require specially balanced Feeds in smaller quantities. We provide calf starter
                                 Feeds for healthy growth and digestion.
                             </div>
@@ -466,11 +446,12 @@
                         <h2 class="accordion-header" id="headingNine">
                             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                How long is the shelf life of your Feeds?
+                                <span data-i18n="indexPage.faq_section.q9_title">How long is the shelf life of your
+                                    Feeds?</span>
                             </button>
                         </h2>
                         <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine">
-                            <div class="accordion-body">
+                            <div class="accordion-body" data-i18n="indexPage.faq_section.q9_desc">
                                 The shelf life is around 3 months if stored properly in cool and dry conditions.
                             </div>
                         </div>
@@ -481,11 +462,12 @@
                         <h2 class="accordion-header" id="headingTen">
                             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                Do you provide bulk supply for dairy farms?
+                                <span data-i18n="indexPage.faq_section.q10_title">Do you provide bulk supply for dairy
+                                    farms?</span>
                             </button>
                         </h2>
                         <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen">
-                            <div class="accordion-body">
+                            <div class="accordion-body" data-i18n="indexPage.faq_section.q10_desc">
                                 Yes, we offer bulk supply with discounts for dairy farms and large cattle owners.
                                 Contact us for customized orders.
                             </div>
@@ -495,7 +477,8 @@
                 </div>
                 <!-- Show More Button -->
                 <div class="text-center mt-3">
-                    <button id="showMoreBtn" class="btn btn-outline-primary">Show More ↓</button>
+                    <button id="showMoreBtn" class="btn btn-outline-primary"><span
+                            data-i18n="indexPage.faq_section.show_more">Show More ↓</span></button>
                 </div>
             </div>
         </div>
@@ -505,61 +488,73 @@
     <!-- Get-In-Touch section -->
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Get in Touch</h2>
-            <p class="text-center mb-5">We're always on the lookout to work with new clients. Please get in touch in one
+            <h2 class="text-center mb-4" data-i18n="indexPage.contact.heading">Get in Touch</h2>
+            <p class="text-center mb-5" data-i18n="indexPage.contact.description">We're always on the lookout to work
+                with new clients. Please get in touch in one
                 of the following ways.</p>
 
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <form id="contactForm">
                         <div class="mb-3">
-                            <label for="fullName" class="form-label">Full Name *</label>
+                            <label for="fullName" class="form-label" data-i18n="indexPage.contact.form.name">Full Name
+                                *</label>
                             <input type="text" class="form-control" id="fullName" placeholder="Your Name" required>
                         </div>
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="email" class="form-label">Email *</label>
+                                <label for="email" class="form-label" data-i18n="indexPage.contact.form.email">Email
+                                    *</label>
                                 <input type="email" class="form-control" id="email" placeholder="your@example.com"
                                     required>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="phone" class="form-label">Phone Number</label>
+                                <label for="phone" class="form-label" data-i18n="indexPage.contact.form.phone">Phone
+                                    Number</label>
                                 <input type="tel" class="form-control" id="phone" placeholder="+91 9876543210">
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="subject" class="form-label">Subject *</label>
+                            <label for="subject" class="form-label" data-i18n="indexPage.contact.form.subject">Subject
+                                *</label>
                             <input type="text" class="form-control" id="subject" placeholder="Inquiry about..."
                                 required>
                         </div>
                         <div class="mb-3">
-                            <label for="message" class="form-label">Message *</label>
+                            <label for="message" class="form-label" data-i18n="indexPage.contact.form.message">Message
+                                *</label>
                             <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?"
                                 required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-outline-success w-100">Send Message</button>
+                        <button type="submit" class="btn btn-outline-success w-100"
+                            data-i18n="indexPage.contact.form.submit">Send Message</button>
                     </form>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="mb-4">
-                        <h5><i class="bi bi-geo-alt text-success me-2"></i>Office Address</h5>
-                        <p>77D, Duraisamypuram, Nilakottai, Dindigul -624208.</p>
+                        <h5 data-i18n="indexPage.contact.address_title"><i class="bi bi-geo-alt text-success me-2"
+                                data-i18n="indexPage.contact.heading"></i>Office Address</h5>
+                        <p data-i18n="indexPage.contact.address_value">77D, Duraisamypuram, Nilakottai, Dindigul
+                            -624208.</p>
                     </div>
 
                     <div class="mb-4">
-                        <h5><i class="bi bi-telephone text-success me-2"></i>Phone</h5>
+                        <h5 data-i18n="indexPage.contact.phone_title"><i
+                                class="bi bi-telephone text-success me-2"></i>Phone</h5>
                         <p> +91 97916 60051</p>
                     </div>
 
                     <div class="mb-4">
-                        <h5><i class="bi bi-envelope text-success me-2"></i>Email</h5>
-                        <p>shrisaicattleFeedss@gmail.com </p>
+                        <h5 data-i18n="indexPage.contact.email_title"><i
+                                class="bi bi-envelope text-success me-2"></i>Email</h5>
+                        <p>shrisaicattleFeeds@gmail.com </p>
                     </div>
 
                     <div class="mb-4">
-                        <h5><i class="bi bi-clock text-success me-2"></i>Opening Hours</h5>
-                        <p>
+                        <h5 data-i18n="indexPage.contact.hours_title"><i
+                                class="bi bi-clock text-success me-2"></i>Opening Hours</h5>
+                        <p data-i18n="indexPage.contact.hours_value">
                             Mon - Fri: 7am - 8pm<br>
                             Sat - Sun: 9am - 2pm
                         </p>
@@ -584,44 +579,50 @@
             <div class="row align-items-start">
                 <!-- Logo and Description -->
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold text-light">Shri Sai Cattle Feeds</h5>
-                    <p class="text-light">Dedicated to superior cattle nutrition and farmer success through quality
-                        Feedss and expert
-                        support.</p>
+                    <h5 class="fw-bold text-light" data-i18n="indexPage.footer.brand">Shri Sai Cattle Feeds</h5>
+                    <p class="text-light" data-i18n="indexPage.footer.desc">Dedicated to superior cattle nutrition and
+                        farmer success through quality Feeds and expert support.</p>
                     <div class="social-icons">
-                        <a href="https://m.facebook.com/shrisaicattleFeeds" target="_blank" class="me-2"><i
+                        <a href="https://m.facebook.com/shrisaicattleFeed" target="_blank" class="me-2"><i
                                 class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/shrisaicattleFeeds?igsh=dmtwejQzMmZ5ajEx" target="_blank"
+                        <a href="https://www.instagram.com/shrisaicattleFeed?igsh=dmtwejQzMmZ5ajEx" target="_blank"
                             class="me-2"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/9597114210?text=Hi%20I%20want%20to%20know%20more%20about%20your%20products"
+                        <a href="https://wa.me/9791660051?text=Hi%20I%20want%20to%20know%20more%20about%20your%20products"
                             target="_blank"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
 
                 <!-- Quick Links -->
                 <div class="col-md-2 mb-3">
-                    <h6 class="fw-bold text-warning">Quick Links</h6>
+                    <h6 class="fw-bold text-warning" data-i18n="indexPage.footer.quickLinks.title">Quick Links</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-decoration-none text-light">Home</a></li>
-                        <li><a href="#about" class="text-decoration-none text-light">About Us</a></li>
-                        <li><a href="#benefits" class="text-decoration-none text-light">Benefits</a></li>
-                        <li><a href="#whychoose" class="text-decoration-none text-light">FAQs</a></li>
-                        <li><a href="#missionvision" class="text-decoration-none text-light">Mission & Vision</a></li>
+                        <li><a href="#" class="text-decoration-none text-light"
+                                data-i18n="indexPage.footer.quickLinks.home">Home</a></li>
+                        <li><a href="#about" class="text-decoration-none text-light"
+                                data-i18n="indexPage.footer.quickLinks.about">About Us</a></li>
+                        <li><a href="#benefits" class="text-decoration-none text-light"
+                                data-i18n="indexPage.footer.quickLinks.benefits">Benefits</a></li>
+                        <li><a href="#whychoose" class="text-decoration-none text-light"
+                                data-i18n="indexPage.footer.quickLinks.faqs">FAQs</a></li>
+                        <li><a href="#missionvision" class="text-decoration-none text-light"
+                                data-i18n="indexPage.footer.quickLinks.mission">Mission & Vision</a></li>
                     </ul>
                 </div>
 
                 <!-- Products -->
                 <div class="col-md-3 mb-3">
-                    <h6 class="fw-bold text-warning">Products</h6>
+                    <h6 class="fw-bold text-warning" data-i18n="indexPage.footer.products.title">Products</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#products" class="text-decoration-none text-light">Cattle Feeds</a></li>
-                        <li><a href="#products" class="text-decoration-none text-light">Goat Feeds</a></li>
+                        <li><a href="#products" class="text-decoration-none text-light"
+                                data-i18n="indexPage.footer.products.cattle">Cattle Feeds</a></li>
+                        <li><a href="#products" class="text-decoration-none text-light"
+                                data-i18n="indexPage.footer.products.goat">Goat Feeds</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact Us -->
                 <div class="col-md-3 mb-3">
-                    <h6 class="fw-bold text-warning">Contact Us</h6>
+                    <h6 class="fw-bold text-warning" data-i18n="indexPage.footer.contact.title">Contact Us</h6>
                     <ul class="list-unstyled text-light">
                         <li>
                             <i class="bi bi-telephone-fill me-2" style="color: antiquewhite;"></i> +91 97916 60051
@@ -631,7 +632,8 @@
                             shrisaicattleFeeds@gmail.com
                         </li>
                         <li>
-                            <i class="bi bi-geo-alt-fill me-2" style="color: antiquewhite;"></i> Nilakottai, Tamil Nadu
+                            <i class="bi bi-geo-alt-fill me-2" style="color: antiquewhite;"></i> <span
+                                data-i18n="indexPage.footer.contact.address">Nilakottai, Tamil Nadu</span>
                         </li>
                     </ul>
                 </div>
@@ -640,7 +642,7 @@
 
             <hr>
 
-            <div class="text-center small text-light">
+            <div class="text-center small text-light" data-i18n="indexPage.footer.copyright">
                 &copy; 2023 Shri Sai Cattle Feeds. All rights reserved.
             </div>
         </div>
@@ -651,12 +653,13 @@
         <div class="main-btn"><i class="bi bi-share-fill"></i></div>
 
         <div class="social-items">
-            <a href="https://m.facebook.com/shrisaicattleFeeds" target="_blank" style="color: #1877F2;"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/shrisaicattleFeeds?igsh=dmtwejQzMmZ5ajEx" target="_blank" style="color: #E4405F;"><i
-                    class="bi bi-instagram"></i></a>
-            <a href="https://wa.me/9597114210?text=Hi%20I%20want%20to%20know%20more%20about%20your%20products"
+            <a href="https://m.facebook.com/shrisaicattleFeed" target="_blank" style="color: #1877F2;"><i
+                    class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/shrisaicattleFeed?igsh=dmtwejQzMmZ5ajEx" target="_blank"
+                style="color: #E4405F;"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/9791660051?text=Hi%20I%20want%20to%20know%20more%20about%20your%20Cattle%20Feed%20products"
                 target="_blank" style="color: #25D366;"><i class="bi bi-whatsapp"></i></a>
-            </div>
+        </div>
     </div>
 
     <!--Modal -->
@@ -664,15 +667,16 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content bg-success text-white shadow-lg rounded-3">
                 <div class="modal-header border-0">
-                    <h5 class="modal-title fw-bold">Message Ready!</h5>
+                    <h5 class="modal-title fw-bold" data-i18n="indexPage.modal.title">Message Ready!</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" data-i18n="indexPage.modal.body_line1">
                     Your message has been prepared.<br>
                     Click below to open WhatsApp and send it.
                 </div>
                 <div class="modal-footer border-0">
-                    <a href="#" id="openWhatsapp" target="_blank" class="btn btn-light fw-bold px-4">
+                    <a href="#" id="openWhatsapp" target="_blank" class="btn btn-light fw-bold px-4"
+                        data-i18n="indexPage.modal.button">
                         <i class="bi bi-whatsapp text-success"></i> Open WhatsApp
                     </a>
                 </div>
@@ -736,11 +740,13 @@
         window.addEventListener("load", activateBrightness);
     </script>
 
-
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script src="i18n.js"></script>
+
 </body>
 
 </html>

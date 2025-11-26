@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shri Sai Cattle Feeds | Products</title>
+    <title data-i18n="productPage.headtitle">Shri Sai Cattle Feeds | Ingredients</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -14,25 +14,30 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top custom-shadow">
         <div class="container">
             <img src="image/Sai-logo.webp" alt="Sai logo" width="40" height="40"/> &nbsp;
-            <a class="navbar-brand" href="#" style="color: darkgreen; font-family: 'Montserrat';">Shri Sai Cattle Feeds</a>
+            <a class="navbar-brand" href="#" style="color: darkgreen; font-family: 'Montserrat';" data-i18n="productPage.navbar.brand">Shri Sai Cattle Feeds</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#products">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#benefits">Benefits</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#whychoose">Why Choose Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="productPage.navbar.home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#products" data-i18n="productPage.navbar.products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#benefits" data-i18n="productPage.navbar.benefits">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#whychoose" data-i18n="productPage.navbar.whychoose">Why Choose Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact" data-i18n="productPage.navbar.contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="langToggleBtn" class="btn btn-language ms-2" onclick="toggleLanguage()">
+                           <span class="lang-en">EN</span> / <span class="lang-ta">TA</span>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="container my-5">
-        <a href="index.html" class="btn btn-primary m-3">← Back to Home</a>
-        <h2 class="text-center mb-4">Ingredients & Benefits of Shri Sai Cattle Feeds</h2>
+        <a href="index.html" class="btn btn-primary m-3" data-i18n="productPage.backToHome">← Back to Home</a>
+        <h2 class="text-center mb-4" data-i18n="productPage.pageTitle">Ingredients & Benefits of Shri Sai Cattle Feeds</h2>
 
         <div class="row">
             <!-- 1. Corn -->
@@ -40,15 +45,15 @@
                 <div class="card h-100 shadow">
                     <img src="image/Corn Flour.webp" class="card-img-top" alt="Corn Flour">
                     <div class="card-body">
-                        <h5 class="card-title">Corn Flour</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title1">Corn Flour</h5>
                         <p class="card-text">
                         <ul>
-                            <li>Boosts energy and stamina</li>
-                            <li>Enhances milk fat percentage</li>
+                            <li data-i18n="productPage.productsList.points1_1">Boosts energy and stamina</li>
+                            <li data-i18n="productPage.productsList.points1_2">Enhances milk fat percentage</li>
                         </ul>
                         </p>
-                        <a href="https://wa.me/9597114210?text=I%20want%20to%20enquire%20about%20Corn" target="_blank"
-                            class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=I%20want%20to%20enquire%20about%20Corn" target="_blank"
+                            class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp1">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -57,15 +62,15 @@
                 <div class="card h-100 shadow">
                     <img src="image/DDGS.png" class="card-img-top" alt="DDGS">
                     <div class="card-body">
-                        <h5 class="card-title">DDGS</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title2">DDGS</h5>
                         <p class="card-text">
                         <ul>
-                            <li>Excellent protein source</li>
-                            <li>Supports muscle development</li>
+                            <li data-i18n="productPage.productsList.points2_1">Excellent protein source</li>
+                            <li data-i18n="productPage.productsList.points2_2">Supports muscle development</li>
                         </ul>
                         </p>
-                        <a href="https://wa.me/9597114210?text=I%20want%20to%20enquire%20about%20DDGS" target="_blank"
-                            class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=I%20want%20to%20enquire%20about%20DDGS" target="_blank"
+                            class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp2">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -74,13 +79,13 @@
                 <div class="card h-100 shadow">
                     <img src="image/Salt.webp" class="card-img-top" alt="Salt">
                     <div class="card-body">
-                        <h5 class="card-title">Salt</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title3">Salt</h5>
                         <ul>
-                            <li>Encourages appetite</li>
-                            <li>Maintains hydration levels</li>
+                            <li data-i18n="productPage.productsList.points3_1">Encourages appetite</li>
+                            <li data-i18n="productPage.productsList.points3_2">Maintains hydration levels</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=I%20want%20to%20enquire%20about%20Salt" target="_blank"
-                            class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=I%20want%20to%20enquire%20about%20Salt" target="_blank"
+                            class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp3">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -91,13 +96,13 @@
                 <div class="card h-100 shadow">
                     <img src="image/Karuka Thavudu.webp" class="card-img-top" alt="Karuka Thavudu">
                     <div class="card-body">
-                        <h5 class="card-title">Karuka Thavudu</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title4">Karuka Thavudu</h5>
                         <ul>
-                            <li>Improves digestion</li>
-                            <li>Keeps cattle healthy</li>
+                            <li data-i18n="productPage.productsList.points4_1">Improves digestion</li>
+                            <li data-i18n="productPage.productsList.points4_2">Keeps cattle healthy</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=I%20want%20to%20enquire%20about%20Karuka%20Thavudu"
-                            target="_blank" class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=I%20want%20to%20enquire%20about%20Karuka%20Thavudu"
+                            target="_blank" class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp4">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -106,13 +111,13 @@
                 <div class="card h-100 shadow">
                     <img src="image/Pulugal Thavudu.webp" class="card-img-top" alt="Pulugal Thavudu">
                     <div class="card-body">
-                        <h5 class="card-title">Pulugal Thavudu</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title5">Pulugal Thavudu</h5>
                         <ul>
-                            <li>Natural source of minerals</li>
-                            <li>Supports nutrient absorption</li>
+                            <li data-i18n="productPage.productsList.points5_1">Natural source of minerals</li>
+                            <li data-i18n="productPage.productsList.points5_2">Supports nutrient absorption</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=I%20want%20to%20enquire%20about%20Pulugal%20Thavudu"
-                            target="_blank" class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=I%20want%20to%20enquire%20about%20Pulugal%20Thavudu"
+                            target="_blank" class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp5">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -121,13 +126,13 @@
                 <div class="card h-100 shadow">
                     <img src="image/Sesame Cake.webp" class="card-img-top" alt="Sesame Cake">
                     <div class="card-body">
-                        <h5 class="card-title">Sesame Cake</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title6">Sesame Cake</h5>
                         <ul>
-                            <li>Boosts milk richness</li>
-                            <li>Strengthens bones & immunity</li>
+                            <li data-i18n="productPage.productsList.points6_1">Boosts milk richness</li>
+                            <li data-i18n="productPage.productsList.points6_2">Strengthens bones & immunity</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=I%20want%20to%20enquire%20about%20Sesame%20Cake"
-                            target="_blank" class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=I%20want%20to%20enquire%20about%20Sesame%20Cake"
+                            target="_blank" class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp6">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -138,13 +143,13 @@
                 <div class="card h-100 shadow">
                     <img src="image/Groundnut Cake.webp" class="card-img-top" alt="Groundnut Cake">
                     <div class="card-body">
-                        <h5 class="card-title">Groundnut Cake</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title7">Groundnut Cake</h5>
                         <ul>
-                            <li>Increases milk quantity</li>
-                            <li>Rich in amino acids</li>
+                            <li data-i18n="productPage.productsList.points7_1">Increases milk quantity</li>
+                            <li data-i18n="productPage.productsList.points7_2">Rich in amino acids</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=I%20want%20to%20enquire%20about%20Groundnut%20Cake"
-                            target="_blank" class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=I%20want%20to%20enquire%20about%20Groundnut%20Cake"
+                            target="_blank" class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp7">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -153,13 +158,13 @@
                 <div class="card h-100 shadow">
                     <img src="image/Coconut Cake.webp" class="card-img-top" alt="Coconut Cake">
                     <div class="card-body">
-                        <h5 class="card-title">Coconut Cake</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title8">Coconut Cake</h5>
                         <ul>
-                            <li>Adds shine to the coat</li>
-                            <li>Supports digestive health</li>
+                            <li data-i18n="productPage.productsList.points8_1">Adds shine to the coat</li>
+                            <li data-i18n="productPage.productsList.points8_2">Supports digestive health</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=I%20want%20to%20enquire%20about%20Coconut%20Cake"
-                            target="_blank" class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=I%20want%20to%20enquire%20about%20Coconut%20Cake"
+                            target="_blank" class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp8">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -168,13 +173,13 @@
                 <div class="card h-100 shadow">
                     <img src="image/Biscuit.webp" class="card-img-top" alt="Biscuit Powder">
                     <div class="card-body">
-                        <h5 class="card-title">Biscuit Powder</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title9">Biscuit Powder</h5>
                         <ul>
-                            <li>Enhances taste</li>
-                            <li>Provides instant energy</li>
+                            <li data-i18n="productPage.productsList.points9_1">Enhances taste</li>
+                            <li data-i18n="productPage.productsList.points9_2">Provides instant energy</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=I%20want%20to%20enquire%20about%20Biscuit%20Powder"
-                            target="_blank" class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=I%20want%20to%20enquire%20about%20Biscuit%20Powder"
+                            target="_blank" class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp9">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -185,13 +190,13 @@
                 <div class="card h-100 shadow">
                     <img src="image/Kambu Flour (Pearl Millet).webp" class="card-img-top" alt="Kambu">
                     <div class="card-body">
-                        <h5 class="card-title">Kambu (Pearl Millet)</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title10">Kambu (Pearl Millet)</h5>
                         <ul>
-                            <li>Keeps cattle energetic</li>
-                            <li>Supports heat tolerance</li>
+                            <li data-i18n="productPage.productsList.points10_1">Keeps cattle energetic</li>
+                            <li data-i18n="productPage.productsList.points10_2">Supports heat tolerance</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=Enquiry%20about%20Kambu%20(Pearl%20Millet)"
-                            target="_blank" class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=Enquiry%20about%20Kambu%20(Pearl%20Millet)"
+                            target="_blank" class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp10">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -200,13 +205,13 @@
                 <div class="card h-100 shadow">
                     <img src="image/Mysore Gram.webp" class="card-img-top" alt="Mysore">
                     <div class="card-body">
-                        <h5 class="card-title">Mysore (Horse Gram)</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title11">Mysore (Horse Gram)</h5>
                         <ul>
-                            <li>Improves cattle strength</li>
-                            <li>Supports digestion</li>
+                            <li data-i18n="productPage.productsList.points11_1">Improves cattle strength</li>
+                            <li data-i18n="productPage.productsList.points11_2">Supports digestion</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=Enquiry%20about%20Mysore%20(Horse%20Gram)"
-                            target="_blank" class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=Enquiry%20about%20Mysore%20(Horse%20Gram)"
+                            target="_blank" class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp11">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -215,17 +220,16 @@
                 <div class="card h-100 shadow">
                     <img src="image/Red Thuvarai.webp" class="card-img-top" alt="Red Thuvarai">
                     <div class="card-body">
-                        <h5 class="card-title">Red Thuvarai</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title12">Red Thuvarai</h5>
                         <ul>
-                            <li>Strengthens muscles</li>
-                            <li>Enhances milk yield</li>
+                            <li data-i18n="productPage.productsList.points12_1">Strengthens muscles</li>
+                            <li data-i18n="productPage.productsList.points12_2">Enhances milk yield</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=Enquiry%20about%20Red%20Thuvarai" target="_blank"
-                            class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=Enquiry%20about%20Red%20Thuvarai" target="_blank"
+                            class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp12">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="row">
             <!-- 13. White Thuvarai -->
@@ -233,13 +237,13 @@
                 <div class="card h-100 shadow">
                     <img src="image/White Thuvarai.webp" class="card-img-top" alt="White Thuvarai">
                     <div class="card-body">
-                        <h5 class="card-title">White Thuvarai</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title13">White Thuvarai</h5>
                         <ul>
-                            <li>Boosts growth in calves</li>
-                            <li>Improves Feeds efficiency</li>
+                            <li data-i18n="productPage.productsList.points13_1">Boosts growth in calves</li>
+                            <li data-i18n="productPage.productsList.points13_2">Improves Feeds efficiency</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=Enquiry%20about%20White%20Thuvarai" target="_blank"
-                            class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=Enquiry%20about%20White%20Thuvarai" target="_blank"
+                            class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp13">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -248,13 +252,13 @@
                 <div class="card h-100 shadow">
                     <img src="image/Thepe Mavu.webp" class="card-img-top" alt="Thepe Mavu">
                     <div class="card-body">
-                        <h5 class="card-title">Thepe Mavu</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title14">Thepe Mavu</h5>
                         <ul>
-                            <li>Helps in weight gain</li>
-                            <li>Provides sustained energy</li>
+                            <li data-i18n="productPage.productsList.points14_1">Helps in weight gain</li>
+                            <li data-i18n="productPage.productsList.points14_2">Provides sustained energy</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=Enquiry%20about%20Thepe%20Mavu" target="_blank"
-                            class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=Enquiry%20about%20Thepe%20Mavu" target="_blank"
+                            class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp14">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -263,13 +267,13 @@
                 <div class="card h-100 shadow">
                     <img src="image/Pasi Dust.webp" class="card-img-top" alt="Pasi Dust">
                     <div class="card-body">
-                        <h5 class="card-title">Pasi Dust (Green Gram Dust)</h5>
+                        <h5 class="card-title" data-i18n="productPage.productsList.title15">Pasi Dust (Green Gram Dust)</h5>
                         <ul>
-                            <li>Improves digestion & milk flow</li>
-                            <li>Boosts immunity</li>
+                            <li data-i18n="productPage.productsList.points15_1">Improves digestion & milk flow</li>
+                            <li data-i18n="productPage.productsList.points15_2">Boosts immunity</li>
                         </ul>
-                        <a href="https://wa.me/9597114210?text=Enquiry%20about%20Pasi%20Dust%20(Green%20Gram%20Dust)"
-                            target="_blank" class="btn btn-outline-warning">Enquire on WhatsApp</a>
+                        <a href="https://wa.me/9791660051?text=Enquiry%20about%20Pasi%20Dust%20(Green%20Gram%20Dust)"
+                            target="_blank" class="btn btn-outline-warning" data-i18n="productPage.productsList.whatsapp15">Enquire on WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -283,41 +287,39 @@
             <div class="row align-items-start">
                 <!-- Logo and Description -->
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold text-light">Shri Sai Cattle Feeds</h5>
-                    <p class="text-light">Dedicated to superior cattle nutrition and farmer success through quality
-                        Feedss and expert
-                        support.</p>
+                    <h5 class="fw-bold text-light" data-i18n="productPage.footer.brand">Shri Sai Cattle Feeds</h5>
+                    <p class="text-light" data-i18n="productPage.footer.desc">Dedicated to superior cattle nutrition and farmer success through quality Feeds and expert support.</p>
                     <div class="social-icons">
-                        <a href="https://m.facebook.com/shrisaicattleFeeds" target="_blank" class="me-2"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/shrisaicattleFeeds?igsh=dmtwejQzMmZ5ajEx" target="_blank" class="me-2"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/9597114210?text=Hi%20I%20want%20to%20know%20more%20about%20your%20products" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://m.facebook.com/shrisaicattleFeed" target="_blank" class="me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/shrisaicattleFeed?igsh=dmtwejQzMmZ5ajEx" target="_blank" class="me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/9791660051?text=Hi%20I%20want%20to%20know%20more%20about%20your%20Cattle%20Feed%20products" target="_blank"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
 
                 <!-- Quick Links -->
                 <div class="col-md-2 mb-3">
-                    <h6 class="fw-bold text-warning">Quick Links</h6>
+                    <h6 class="fw-bold text-warning" data-i18n="productPage.footer.quickLinks.title">Quick Links</h6>
                     <ul class="list-unstyled">
-                        <li><a href="index.html#home" class="text-decoration-none text-light">Home</a></li>
-                        <li><a href="index.html#about" class="text-decoration-none text-light">About Us</a></li>
-                        <li><a href="index.html#benefits" class="text-decoration-none text-light">Benefits</a></li>
-                        <li><a href="index.html#whychoose" class="text-decoration-none text-light">FAQs</a></li>
-                        <li><a href="index.html#missionvision" class="text-decoration-none text-light">Mission & Vision</a></li>
+                        <li><a href="index.html#home" class="text-decoration-none text-light" data-i18n="productPage.footer.quickLinks.home">Home</a></li>
+                        <li><a href="index.html#about" class="text-decoration-none text-light" data-i18n="productPage.footer.quickLinks.about">About Us</a></li>
+                        <li><a href="index.html#benefits" class="text-decoration-none text-light" data-i18n="productPage.footer.quickLinks.benefits">Benefits</a></li>
+                        <li><a href="index.html#whychoose" class="text-decoration-none text-light" data-i18n="productPage.footer.quickLinks.faqs">FAQs</a></li>
+                        <li><a href="index.html#missionvision" class="text-decoration-none text-light" data-i18n="productPage.footer.quickLinks.mission">Mission & Vision</a></li>
                     </ul>
                 </div>
 
                 <!-- Products -->
                 <div class="col-md-3 mb-3">
-                    <h6 class="fw-bold text-warning">Products</h6>
+                    <h6 class="fw-bold text-warning" data-i18n="productPage.footer.products.title">Products</h6>
                     <ul class="list-unstyled">
-                        <li><a href="index.html#products" class="text-decoration-none text-light">Cattle Feeds</a></li>
-                        <li><a href="index.html#products" class="text-decoration-none text-light">Goat Feeds</a></li>
+                        <li><a href="index.html#products" class="text-decoration-none text-light" data-i18n="productPage.footer.products.cattle">Goat Feeds</a></li>
+                        <li><a href="index.html#products" class="text-decoration-none text-light" data-i18n="productPage.footer.products.goat">Cattle Feeds</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact Us -->
                 <div class="col-md-3 mb-3">
-                    <h6 class="fw-bold text-warning">Contact Us</h6>
+                    <h6 class="fw-bold text-warning" data-i18n="productPage.footer.contact.title">Contact Us</h6>
                     <ul class="list-unstyled text-light">
                         <li>
                             <i class="bi bi-telephone-fill me-2" style="color: antiquewhite;"></i> +91 97916 60051
@@ -326,7 +328,7 @@
                             <i class="bi bi-envelope-fill me-2" style="color: antiquewhite;"></i> shrisaicattleFeeds@gmail.com
                         </li>
                         <li>
-                            <i class="bi bi-geo-alt-fill me-2" style="color: antiquewhite;"></i> Nilakottai, Tamil Nadu
+                            <i class="bi bi-geo-alt-fill me-2" style="color: antiquewhite;"></i> <span data-i18n="productPage.footer.contact.address">Nilakottai, Tamil Nadu</span>
                         </li>
                     </ul>
                 </div>
@@ -334,7 +336,7 @@
 
             <hr>
 
-            <div class="text-center small text-light">
+            <div class="text-center small text-light" data-i18n="productPage.footer.copyright">
                 &copy; 2023 Shri Sai Cattle Feeds. All rights reserved.
             </div>
         </div>
@@ -343,6 +345,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script src="i18n.js"></script>
 
 </body>
 
