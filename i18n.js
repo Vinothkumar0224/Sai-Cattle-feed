@@ -30,7 +30,7 @@ function translatePage(data) {
             if (Array.isArray(translation)) {
                 el.innerHTML = translation.map(item => `<li>${item}</li>`).join("");
             } else {
-                el.innerHTML = translation;
+                el.innerHTML = translation.replace(/\n/g, "<br>");
             }
         } else {
             console.warn("Missing translation for:", key);

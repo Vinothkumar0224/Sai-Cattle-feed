@@ -13,25 +13,30 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(textMessage)}`;
 
-    // Set WhatsApp link inside modal button
     document.getElementById("openWhatsapp").setAttribute("href", whatsappUrl);
 
-    // Show modal
     const whatsappModal = new bootstrap.Modal(document.getElementById('whatsappModal'));
     whatsappModal.show();
 
-    // Reset form
     document.getElementById("contactForm").reset();
 });
+
 const showMoreBtn = document.getElementById("showMoreBtn");
+const showMoreText = document.getElementById("showMoreText");
 const moreFaqs = document.getElementById("moreFaqs");
 
 showMoreBtn.addEventListener("click", () => {
-    if (moreFaqs.style.display === "none") {
+
+    if (moreFaqs.style.display === "none" || moreFaqs.style.display === "") {
         moreFaqs.style.display = "block";
-        showMoreBtn.textContent = "Show Less ↑";
+
+        showMoreText.setAttribute("data-i18n", "indexPage.faq_section.show_less");
+
     } else {
         moreFaqs.style.display = "none";
-        showMoreBtn.textContent = "Show More ↓";
+
+        showMoreText.setAttribute("data-i18n", "indexPage.faq_section.show_more");
     }
+
+    loadLanguage(localStorage.getItem("lang"));
 });

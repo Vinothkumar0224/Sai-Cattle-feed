@@ -48,7 +48,7 @@
                             data-i18n="indexPage.navbar.contact">Contact</a></li>
                     <li class="nav-item">
                         <button id="langToggleBtn" class="btn btn-language ms-2" onclick="toggleLanguage()">
-                           <span class="lang-en">EN</span> / <span class="lang-ta">TA</span>
+                            <span class="lang-en">EN</span> / <span class="lang-ta">TA</span>
                         </button>
                     </li>
                 </ul>
@@ -477,8 +477,8 @@
                 </div>
                 <!-- Show More Button -->
                 <div class="text-center mt-3">
-                    <button id="showMoreBtn" class="btn btn-outline-primary"><span
-                            data-i18n="indexPage.faq_section.show_more">Show More ↓</span></button>
+                    <button id="showMoreBtn" class="btn btn-outline-primary">
+                        <span id="showMoreText" data-i18n="indexPage.faq_section.show_more">Show More ↓</span></button>
                 </div>
             </div>
         </div>
@@ -587,8 +587,9 @@
                                 class="bi bi-facebook"></i></a>
                         <a href="https://www.instagram.com/shrisaicattleFeed?igsh=dmtwejQzMmZ5ajEx" target="_blank"
                             class="me-2"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/9791660051?text=Hi%20I%20want%20to%20know%20more%20about%20your%20products"
-                            target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=9791660051&text=Hi%20I%20want%20to%20know%20more%20about%20your%20products"
+                            target="_blank">
+                            <i class="bi bi-whatsapp"></i> </a>
                     </div>
                 </div>
 
@@ -615,7 +616,7 @@
                     <ul class="list-unstyled">
                         <li><a href="#products" class="text-decoration-none text-light"
                                 data-i18n="indexPage.footer.products.cattle">Cattle Feeds</a></li>
-                        <li><a href="#products" class="text-decoration-none text-light"
+                        <li><a id="goatFeedLink" href="#products" class="text-decoration-none text-light"
                                 data-i18n="indexPage.footer.products.goat">Goat Feeds</a></li>
                     </ul>
                 </div>
@@ -657,8 +658,9 @@
                     class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/shrisaicattleFeed?igsh=dmtwejQzMmZ5ajEx" target="_blank"
                 style="color: #E4405F;"><i class="bi bi-instagram"></i></a>
-            <a href="https://wa.me/9791660051?text=Hi%20I%20want%20to%20know%20more%20about%20your%20Cattle%20Feed%20products"
-                target="_blank" style="color: #25D366;"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=9791660051&text=Hi%20I%20want%20to%20know%20more%20about%20your%20Cattle%20Feed%20products"
+                target="_blank" style="color: #25D366;">
+                <i class="bi bi-whatsapp"></i> </a>
         </div>
     </div>
 
@@ -738,6 +740,45 @@
 
         // Initial dim timer start after page loads
         window.addEventListener("load", activateBrightness);
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const goatLink = document.getElementById("goatFeedLink");
+
+            goatLink.addEventListener("click", function (event) {
+                event.preventDefault();
+                showComingSoonMessage();
+
+                setTimeout(() => {
+                    document.querySelector("#products").scrollIntoView({ behavior: "smooth" });
+                }, 200);
+            });
+        });
+
+        function showComingSoonMessage() {
+            let lang = localStorage.getItem("lang") || "en";
+
+            fetch(`${lang}.json`)
+                .then(res => res.json())
+                .then(data => {
+                    const message =
+                        data?.comingSoon?.goat_feed ||
+                        (lang === "ta"
+                            ? "ஆட்டுத் தீவனம் – விரைவில் வருகிறது!"
+                            : "Goat Feed – Coming Soon!");
+
+                    const productSection = document.querySelector("#products .container");
+
+                    const alertDiv = document.createElement("div");
+                    alertDiv.className = "alert alert-warning text-center mt-3 fw-bold";
+                    alertDiv.innerText = message;
+
+                    productSection.prepend(alertDiv);
+
+                    setTimeout(() => alertDiv.remove(), 4000);
+                })
+                .catch(err => console.log("Error loading language file:", err));
+        }
     </script>
 
     <script src="script.js"></script>
