@@ -103,9 +103,7 @@ a {
 }
 
 .navbar .btn-language {
-    /* border: 2px solid #ff9800;  */
     background-color: white;
-    /* color: #ff9800; */
     font-weight: 600;
     border-radius: 20px;
     padding: 5px 15px;
@@ -361,10 +359,6 @@ footer .social-icons i{
 }
 
 @media (max-width: 991px) {
-    .navbar .container {
-        flex-wrap: nowrap; 
-    }
-
     #langToggleBtnMobile {
         display: inline-flex;
         align-items: center;
