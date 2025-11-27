@@ -30,6 +30,12 @@
             <a class="navbar-brand" style="color: darkgreen; font-family: 'Montserrat';" href="#"
                 data-i18n="indexPage.navbar.brand_name">Shri Sai Cattle
                 Feeds</a>
+
+            <!-- Language toggle visible only on mobile -->
+            <button id="langToggleBtnMobile" class="btn btn-language ms-2 d-lg-none" onclick="toggleLanguage()">
+                <span class="lang-en">EN</span> / <span class="lang-ta">TA</span>
+            </button>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,7 +52,7 @@
                             data-i18n="indexPage.navbar.why_choose_us">Why Choose Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact"
                             data-i18n="indexPage.navbar.contact">Contact</a></li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-lg-block">
                         <button id="langToggleBtn" class="btn btn-language ms-2" onclick="toggleLanguage()">
                             <span class="lang-en">EN</span> / <span class="lang-ta">TA</span>
                         </button>
