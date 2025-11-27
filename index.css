@@ -5,8 +5,11 @@ html{
 /* When Tamil is active */
 html[lang="ta"] * {
     font-family: 'Noto Sans Tamil', sans-serif !important;
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
+}
+html[lang="ta"] .navbar .nav-link {
+    font-size: 0.90rem !important;  
+    white-space: nowrap !important; 
+    margin-top: -3px;
 }
 
 html[lang="ta"] body {
