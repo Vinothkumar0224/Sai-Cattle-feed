@@ -40,3 +40,18 @@ showMoreBtn.addEventListener("click", () => {
 
     loadLanguage(localStorage.getItem("lang"));
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const tooltip = document.getElementById("langTip");
+
+    // Show after 1 second
+    setTimeout(() => {
+        tooltip.classList.add("show");
+    }, 1000);
+
+    // Hide after 4 seconds
+    setTimeout(() => {
+        tooltip.classList.remove("show");
+    }, 5000);
+});
+
