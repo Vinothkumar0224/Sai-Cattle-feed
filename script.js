@@ -55,3 +55,54 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 5000);
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".fade-left, .fade-up");
+
+    function reveal() {
+        elements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top <= window.innerHeight - 50) {
+                el.classList.add("show");
+            }
+        });
+    }
+
+    reveal();
+    window.addEventListener("scroll", reveal);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".fade-left, .fade-right, .fade-up");
+
+    function reveal() {
+        elements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top <= window.innerHeight - 60) {
+                el.classList.add("show");
+            }
+        });
+    }
+
+    reveal();
+    window.addEventListener("scroll", reveal);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const titles = document.querySelectorAll(".section-title");
+
+    titles.forEach((title, index) => {
+        if (index % 2 === 0) {
+            title.classList.add("from-left");  
+        }
+    });
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    titles.forEach(title => observer.observe(title));
+});

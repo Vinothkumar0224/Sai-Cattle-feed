@@ -403,3 +403,55 @@ footer .social-icons i{
     border-style: solid;
     border-color: transparent transparent #ffc107 transparent;
 }
+
+.fade-left, .fade-up {
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+.fade-left {
+    transform: translateX(-25px);
+}
+
+.fade-up {
+    transform: translateY(25px);
+}
+
+.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.fade-left, .fade-right {
+    opacity: 0;
+    transition: all 0.9s ease-out;
+}
+
+.fade-left {
+    transform: translateX(-40px);
+}
+
+.fade-right {
+    transform: translateX(40px);
+}
+
+.show {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.section-title {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all 0.9s ease-out;
+}
+
+.section-title.from-left {
+    transform: translateX(-40px);
+}
+
+.section-title.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
