@@ -16,7 +16,7 @@
         },
         "about": {
             "title": "Shri Sai Cattle Feeds",
-            "tagline": "Strength for cows, prosperity for farmers — Shri Sai Cattle Feeds.",
+            "tagline": "\"Cattle’s Strength, Farmer’s Prosperity\"",
             "para1": "Established in 2023, Shri Sai Cattle Feeds was founded with a clear mission — to provide farmers with high-quality, natural, and nutrient-rich cattle feeds that improve animal strength and productivity.",
             "para2": "Healthy cows are the backbone of successful dairy farmers. That is why our feeds use carefully selected ingredients like maize, grains, oil cakes, minerals, and salts to boost milk production, growth, and digestion.",
             "para3": "Our commitment to purity, consistency, and farmer satisfaction has made us a trusted brand among dairy farmers.",
@@ -25,7 +25,7 @@
         "products_section": {
             "heading": "Our Premium Product",
             "product_title": "Shri Sai Cattle Feeds",
-            "description": "We carefully choose the finest ingredients to provide balanced nutrition for cattle. These ingredients help improve energy, digestion, milk yield, and overall health.",
+            "description": "At Shri Sai Cattle Feed, we bring together time-tested grains and natural proteins to create a balanced, powerful feed mix. Each ingredient plays a vital role in improving milk yield, digestion, and overall cattle health — because healthy cattle make happy farmers.",
             "button_text": "View all ingredients"
         },
         "benefits_section": {
@@ -101,7 +101,7 @@
         },
         "footer": {
             "brand": "Shri Sai Cattle Feeds",
-            "desc": "Committed to high-quality cattle nutrition and farmer success.",
+            "desc": "\"Cattle’s Strength, Farmer’s Prosperity\"",
             "quickLinks": {
                 "title": "Quick Links",
                 "home": "Home",
@@ -119,7 +119,7 @@
                 "title": "Contact Us",
                 "phone": "+91 97916 60051",
                 "email": "shrisaicattleFeeds@gmail.com",
-                "address": "Nilakottai, Tamil Nadu"
+                "address": "Nilakottai, Dindigul - 624208."
             },
             "copyright": "© 2023 Shri Sai Cattle Feeds. All rights reserved."
         },
@@ -157,12 +157,12 @@
             "points3_2": "Maintains body water balance",
             "whatsapp3": "Enquire on WhatsApp",
             
-            "title4": "Cotton Seed Hull",
+            "title4": "Karuka Thavudu",
             "points4_1": "Improves digestion",
             "points4_2": "Protects overall health",
             "whatsapp4": "Enquire on WhatsApp",
             
-            "title5": "Groundnut Hull",
+            "title5": "Pulugal Thavudu",
             "points5_1": "Natural mineral source",
             "points5_2": "Supports nutrient absorption",
             "whatsapp5": "Enquire on WhatsApp",
@@ -187,39 +187,44 @@
             "points9_2": "Provides instant energy",
             "whatsapp9": "Enquire on WhatsApp",
             
-            "title10": "Pearl Millet",
+            "title10": "Kambu",
             "points10_1": "Keeps cattle active",
             "points10_2": "Boosts performance in heat",
             "whatsapp10": "Enquire on WhatsApp",
             
-            "title11": "Horse Gram",
+            "title11": "Mysore",
             "points11_1": "Improves body strength",
             "points11_2": "Enhances digestion",
             "whatsapp11": "Enquire on WhatsApp",
             
-            "title12": "Red Gram",
+            "title12": "Red Thuvarai",
             "points12_1": "Boosts muscle strength",
             "points12_2": "Improves milk quality",
             "whatsapp12": "Enquire on WhatsApp",
             
-            "title13": "White Gram",
+            "title13": "White Thuvarai",
             "points13_1": "Enhances calf growth",
             "points13_2": "Improves feed efficiency",
             "whatsapp13": "Enquire on WhatsApp",
             
-            "title14": "Rice Bran Powder",
+            "title14": "Thepe Mavu",
             "points14_1": "Helps weight gain",
             "points14_2": "Provides long-lasting energy",
             "whatsapp14": "Enquire on WhatsApp",
             
-            "title15": "Green Gram Powder",
+            "title15": "Pasi Dust",
             "points15_1": "Improves digestion & milk flow",
             "points15_2": "Boosts immunity",
-            "whatsapp15": "Enquire on WhatsApp"
+            "whatsapp15": "Enquire on WhatsApp",
+            
+            "title16": "Uluthu Dust",
+            "points16_1": "Strengthens body and bones",
+            "points16_2": "Boosts milk production naturally",
+            "whatsapp16": "Enquire on WhatsApp"
         },
         "footer": {
             "brand": "Shri Sai Cattle Feeds",
-            "desc": "Committed to high-quality cattle nutrition and farmer success.",
+            "desc": "\"Cattle’s Strength, Farmer’s Prosperity\"",
             "quickLinks": {
                 "title": "Quick Links",
                 "home": "Home",
@@ -237,7 +242,7 @@
                 "title": "Contact Us",
                 "phone": "+91 97916 60051",
                 "email": "shrisaicattleFeeds@gmail.com",
-                "address": "Nilakottai, Tamil Nadu"
+                "address": "Nilakottai, Dindigul - 624208."
             },
             "copyright": "© 2023 Shri Sai Cattle Feeds. All rights reserved."
         }
