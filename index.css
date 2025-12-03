@@ -237,6 +237,22 @@ footer .social-icons i{
     color: antiquewhite;
 }
 
+.footer-logo {
+    width: 50px;  
+    height: 50px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Center only on mobile */
+@media (max-width: 600px) {
+    .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .expand-social {
     position: fixed;
     right: 20px;

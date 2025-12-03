@@ -98,7 +98,8 @@
 
     <section id="products" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5 section-title" data-i18n="indexPage.products_section.heading">Our Premium Product</h2>
+            <h2 class="text-center mb-5 section-title" data-i18n="indexPage.products_section.heading">Our Premium
+                Product</h2>
 
             <div class="row align-items-center">
 
@@ -135,8 +136,10 @@
                     <h3 class="fw-bold" data-i18n="indexPage.products_section.product_title">Shri Sai Cattle Feeds</h3>
 
                     <p class="mt-3" data-i18n="indexPage.products_section.description">
-                                  At Shri Sai Cattle Feed, we bring together time-tested grains and natural proteins to create a balanced, powerful feed mix.
-Each ingredient plays a vital role in improving milk yield, digestion, and overall cattle health — because healthy cattle make happy farmers.
+                        At Shri Sai Cattle Feed, we bring together time-tested grains and natural proteins to create a
+                        balanced, powerful feed mix.
+                        Each ingredient plays a vital role in improving milk yield, digestion, and overall cattle health
+                        — because healthy cattle make happy farmers.
                     </p>
 
                     <a href="product.html" class="btn btn-primary mt-3"
@@ -152,7 +155,8 @@ Each ingredient plays a vital role in improving milk yield, digestion, and overa
     <!-- Benefits section -->
     <section id="benefits" class="py-5">
         <div class="container text-center">
-            <h2 class="text-center mb-5 section-title" data-i18n="indexPage.benefits_section.heading">Benefits For Your Cattle</h2>
+            <h2 class="text-center mb-5 section-title" data-i18n="indexPage.benefits_section.heading">Benefits For Your
+                Cattle</h2>
             <div class="row align-items-center g-4">
                 <div class="col-md-6">
                     <img src="image/image.jpeg" class="img-fluid rounded">
@@ -222,7 +226,8 @@ Each ingredient plays a vital role in improving milk yield, digestion, and overa
 
     <section id="whyworks" class="py-5 bg-light fade-in">
         <div class="container">
-            <h2 class="text-center mb-4 fw-bold section-title" data-i18n="indexPage.whyworks_section.heading">Why Our Feeds Works</h2>
+            <h2 class="text-center mb-4 fw-bold section-title" data-i18n="indexPage.whyworks_section.heading">Why Our
+                Feeds Works</h2>
             <p class="text-center mb-5" data-i18n="indexPage.whyworks_section.description">
                 Each batch of Shri Sai Cattle Feeds is a balanced mix of protein, energy, minerals, and fiber — designed
                 for:
@@ -266,7 +271,8 @@ Each ingredient plays a vital role in improving milk yield, digestion, and overa
 
     <section id="missionvision" class="py-5 fade-in">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold section-title" data-i18n="indexPage.missionvision_section.heading">MISSION & VISION
+            <h2 class="text-center mb-5 fw-bold section-title" data-i18n="indexPage.missionvision_section.heading">
+                MISSION & VISION
             </h2>
 
             <div class="row g-4">
@@ -303,7 +309,8 @@ Each ingredient plays a vital role in improving milk yield, digestion, and overa
     <!-- Why Choose Us section -->
     <section id="whychoose" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5 section-title" data-i18n="indexPage.faq_section.heading">Frequently Asked Questions</h2>
+            <h2 class="text-center mb-5 section-title" data-i18n="indexPage.faq_section.heading">Frequently Asked
+                Questions</h2>
 
             <div class="accordion" id="whyChooseAccordion">
 
@@ -538,7 +545,8 @@ Each ingredient plays a vital role in improving milk yield, digestion, and overa
                     <div class="mb-4">
                         <h5 data-i18n="indexPage.contact.address_title"><i class="bi bi-geo-alt text-success me-2"
                                 data-i18n="indexPage.contact.heading"></i>Office Address</h5>
-                        <p data-i18n="indexPage.contact.address_value">77D, Duraisamypuram, Nilakottai, Dindigul - 624208.</p>
+                        <p data-i18n="indexPage.contact.address_value">77D, Duraisamypuram, Nilakottai, Dindigul -
+                            624208.</p>
                     </div>
 
                     <div class="mb-4">
@@ -581,6 +589,7 @@ Each ingredient plays a vital role in improving milk yield, digestion, and overa
             <div class="row align-items-start">
                 <!-- Logo and Description -->
                 <div class="col-md-4 mb-3">
+                    <img src="image/Sai-logo.webp" alt="Shri Sai Logo" class="footer-logo mb-2">
                     <h5 class="fw-bold text-light" data-i18n="indexPage.footer.brand">Shri Sai Cattle Feeds</h5>
                     <p class="text-light" data-i18n="indexPage.footer.desc">“Cattle’s Strength, Farmer’s Prosperity”</p>
                     <div class="social-icons">
@@ -744,6 +753,20 @@ Each ingredient plays a vital role in improving milk yield, digestion, and overa
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            if (params.get("goat") === "1") {
+                showComingSoonMessage();
+
+                // Remove ?goat=1 to prevent repeated message on refresh
+                window.history.replaceState({}, document.title, window.location.pathname);
+
+                // Auto-scroll to products
+                setTimeout(() => {
+                    document.querySelector("#products").scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }, 200);
+            }
             const goatLink = document.getElementById("goatFeedLink");
 
             goatLink.addEventListener("click", function (event) {
